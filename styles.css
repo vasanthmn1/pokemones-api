@@ -1,0 +1,138 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0.443), rgba(0, 0, 255, 0.447));
+}
+
+.container {
+    /* max-width: 1000px; */
+    margin: 15px auto;
+}
+
+.container h1 {
+    color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 0, 0.63);
+}
+
+header h1 {
+    font-size: 4rem;
+    color: red;
+}
+
+.pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 4%;
+
+}
+
+.pokemons div {
+    border-radius: 10px;
+    width: 16%;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+    background-color: #e7f49376;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    position: relative;
+}
+
+.pokemons div .order {
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    font-size: 20px;
+    color: darkgray;
+    margin: 0;
+}
+
+.pokemons div img {
+    width: 100%;
+    transition: 1s;
+}
+
+.pokemons div p {
+    margin: 5px 0;
+}
+
+.pokemons div:hover>img {
+    transform: scale(1.2);
+
+}
+
+/* navigation */
+
+
+
+
+.navigation {
+    display: flex;
+    align-content: flex-end;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+    background-color: rgba(0, 8, 255, 0.361);
+}
+
+.navigation .numbers {
+    font-size: 3rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navigation .numbers span button {
+    font-size: 20px;
+    padding: 0 2px;
+    font-size: 2.5rem;
+    background-color: #ffffff00;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.navigation .numbers button:hover {
+    border-radius: 25px;
+    color: blue;
+    /* box-shadow: rgb(253 253 253 / 34%) 0px 0px 0px 2px; */
+}
+
+.navigation>button {
+    font-size: 20px;
+    padding: 20px;
+    font-size: 1.9rem;
+    border: 0;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.navigation>button:hover {
+    transform: scale(1.3);
+}
+
+.current button {
+    color: blue;
+    box-shadow: rgba(255, 0, 255, 0.34) 0px 0px 10px 2px;
+    border-radius: 10px;
+}
+
+.current button:active {
+    color: aqua;
+}
